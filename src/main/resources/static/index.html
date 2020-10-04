@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello WebSocket</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="connect">WebSocket Game:</label>
+                    <button id="connect" class="btn btn-default" type="submit">Start Game</button>
+                    <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">End Game
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="name">Type the Instruction: </label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter Instruction...">
+                </div>
+                <button id="send" class="btn btn-default" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+           <strong> <h5>Rules to Play: </h5> </strong>
+            <ul>
+                   <li> When a key is pressed in server (instruction), you will receive it; and a timer counting up to 10 seconds in which the same instruction has to be sent.</li>
+               <li> The server verifies if the instruction sent by you matches “the instruction” and assign +1 point on correct, -1 on a wrong key and 0 for timeouts.</li>
+            <li>The game is over when the score reaches either +10 points or -3 points.</li>
+                <li>The game is over if you do not respond for 3 continuous instructions.</li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table id="conversation" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Game Logs: </th>
+                </tr>
+                </thead>
+                <tbody id="greetings">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
