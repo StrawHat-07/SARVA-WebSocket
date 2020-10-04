@@ -1,12 +1,12 @@
-package com.example.messagingstompwebsocket;
+package com.example.messagingstompwebsocket.controller;
 
+import com.example.messagingstompwebsocket.dto.ClientMessage;
+import com.example.messagingstompwebsocket.dto.ServerMessage;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.util.*;
-import java.util.concurrent.CompletableFuture;
 
 @Controller
 public class GreetingController {

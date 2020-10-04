@@ -1,17 +1,9 @@
-package com.example.messagingstompwebsocket;
+package com.example.messagingstompwebsocket.controller;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.messagingstompwebsocket.dto.ServerMessage;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
-import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.servlet.http.HttpServletRequest;
-import java.util.Date;
 
 
 @Service
