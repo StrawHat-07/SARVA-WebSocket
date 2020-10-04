@@ -14,12 +14,12 @@ brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 ```bash
 brew install maven
 ```
-
+### Clone this directory on your local system under a folder 
 ```bash
 git clone https://github.com/StrawHat-07/SARVA-WebSocket.git
 ```
 
-### Ensure that you are checked out in the master branch of the repo. Use the following command
+### Ensure that you are checked out in the master branch of the repo. Use the following command:
 ```bash
 git checkout -b local origin/master
 ```
@@ -38,4 +38,4 @@ java -jar target/messaging-stomp-websocket-0.0.1-SNAPSHOT.jar
 
 #### Have also created a UI for the game. After running the jar file run http://localhost:8080, 
 #### the UI at this endpoint will act as client and spring boot application running on terminal will act as the server.
-#### If any problems getting it up contact me.  
+#### If you face any problems getting it up contact me. (Phone Number - 9958143475)
