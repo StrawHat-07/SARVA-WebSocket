@@ -1,6 +1,7 @@
 # SARVA-WebSocket
 ## WebSocket Game
 
+### Have also created quick UI using jQuery, Bootstrap.
 
 ### Ensure that java8 and maven are installed in the system to run 
 ### You can ensure the installation of java8 on mac by
