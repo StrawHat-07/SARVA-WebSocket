@@ -39,4 +39,4 @@ java -jar target/messaging-stomp-websocket-0.0.1-SNAPSHOT.jar
 
 #### Have also created a UI for the game. After running the jar file run http://localhost:8080, 
 #### the UI at this endpoint will act as client and spring boot application running on terminal will act as the server.
-#### If you face any problems getting it up contact me. (Phone Number - 9958143475)
+
